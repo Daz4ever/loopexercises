@@ -37,7 +37,24 @@ for i in range(0, height):
 spaces = 3
 stars = 1
 
-for i in range(0, 5):
+for i in range(0, howHigh):
     print (" " * spaces) + ("*" * stars) + (" " * spaces)
-     stars += 2
-     space -= 1
+    stars += 2
+    spaces -= 1
+
+# makes a triangle based on user's height input
+howHigh = int(raw_input("Height? "))
+
+spaces = howHigh + 1
+stars = 1
+
+for i in range(0, howHigh):
+    print (" " * spaces) + ("*" * stars) + (" " * spaces)
+    stars += 2
+    spaces -= 1
+
+#prints the multiplication table from 1 to 10
+for i in range(1, 11):
+    for k in range(1, 11):
+        print "%d * %d = " % (i, k),
+        print i * k
