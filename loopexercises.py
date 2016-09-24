@@ -58,3 +58,27 @@ for i in range(1, 11):
     for k in range(1, 11):
         print "%d * %d = " % (i, k),
         print i * k
+
+#bonus: puts a box around your sentence
+sentence = raw_input("Please enter a sentence." )
+
+charCount = len(sentence)
+
+for i in range(0, 3):
+    if i == 0 or i == 2:
+        print (charCount + 4) * "*"
+    else:
+        print "* %s *" % sentence
+
+#bonus prints the first 100 triangle numbers
+for i in range(1, 101):
+    print i*(i + 1)2
+
+#bonus prints its factors given a number
+num = int(raw_input("Choose a number." ))
+
+
+for i in range(1, num + 1):
+
+    if num % i == 0:
+        print "factor: %d " % i
